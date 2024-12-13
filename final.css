@@ -1,0 +1,470 @@
+/* final.css for 'What's the Game Plan' site */
+/* @author Tabitha Bevan, Tri Our Bikes Bikeshop CSS Style Page, Southern Illinois University  Developed: 12/8/24  Tested: 12/13/24 */ 
+
+/* Tablet landscape and desktop layout (960px or more) */
+@media only screen and (min-width: 960px) { 
+    #mobile_menu { display: none; }
+    #nav_menu {display: block;}
+    #nav_menu ul li a {font-size: 130%;}
+    header h1 {font-size: 1000%;}
+     h2{
+        color: linen;
+        font-style: italic;
+        text-shadow: 0 1px 2px black;
+        font-size: 250%;
+        margin: 0;
+        padding: 0;
+        text-align: center;}
+    h6{
+        font-size: 180%;
+        margin:0;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        text-align: center;}
+    p{
+        font-size: 155%;}
+    article p{
+        font-size: 155%;}
+}
+
+/* Tablet portrait layout (768px to 959px) */ 
+@media only screen and (max-width: 959px) { 
+    #mobile_menu {display: none;}
+    #nav_menu{display: block;}
+    #nav_menu ul li a {font-size: 100%;}
+    main {flex-direction: column;}
+    article {order:1;}
+    aside{order:2;}
+    header h1 {font-size: 700%;}
+     h2{
+        color: linen;
+        font-style: italic;
+        text-shadow: 0 1px 2px black;
+        font-size: 225%;
+        margin: 0;
+        padding: 0;
+        text-align: center;}
+    h6{
+        font-size: 150%;
+        margin:0;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        text-align: center;}
+    p{
+        font-size: 100%;}
+    article p{
+        font-size: 135%;}
+}
+
+/* Mobile landscape layout (480px to 767px) */ 
+@media only screen and (max-width: 767px) { 
+    #mobile_menu {display: block;}
+    #nav_menu { display: none; }
+    main {flex-direction: column;}
+    article {order:1;}
+    aside{order:2;}
+    header h1 {font-size: 700%;}
+    h2{
+        color: linen;
+        font-style: italic;
+        text-shadow: 0 1px 2px black;
+        font-size: 180%;
+        margin: 0;
+        padding: 0;
+        text-align: center;}
+    h6{
+        font-size: 130%;
+        padding-top: 2%;
+        margin:0;
+        padding-bottom: 1%;
+        text-align: center;}
+    article p{
+        font-size: 120%;}
+} 
+
+/* Mobile portrait layout (479px or less) */   
+@media only screen and (max-width: 479px) {  
+    #mobile_menu {display: block; }  
+    #nav_menu { display: none; }  
+    header h1 {font-size: 100%;}    
+    table {  
+        display: flex; 
+        flex-direction: column;}  
+    th, td{  
+        display: block;  
+        padding: 1em;  
+        border-bottom: 1px solid #ccc;}  
+    thead{
+        display: none;}  
+    tr td:first-child{  
+        font-weight: bold;  
+        font-size: 110%;  
+        background-color: #CD9586;}  
+    tbody td {
+        border-bottom-style: none;}  
+    tfoot{  
+        background-color: #ECD2BC;  
+        border:none;  
+        border-top: 3px solid black;}  
+    tfoot th, tfoot td:nth-of-type(1) {display:none;}
+    h2{
+        color: linen;
+        font-style: italic;
+        text-shadow: 0 1px 2px black;
+        font-size: 130%;
+        margin: 0;
+        padding: 0;
+        text-align: center;}
+    h6{
+        font-size: 90%;
+        margin:0;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        text-align: center;}
+    article p{
+        font-size: 100%;}  
+}
+
+/* Style for navigation menu */
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+#nav_menu ul li {
+    float: left;
+    }
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px; 
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #79584F;
+    color: white;
+    font-weight: bold;}
+#nav_menu ul li a.current {
+    color: #363857;
+    text-shadow: 0 0 25px white;}
+
+/* Style for html */
+html{
+    background-color: #363857;}
+
+/* Style for body */
+body{
+    background: #8DA2B4;
+    border: 1em  #CD9586;
+    border-style: ridge;
+    margin: 3%;}
+
+/* Style for main */
+main{
+    display: flex;
+    justify-content: center;}
+
+/* Style for headings */
+h1 {
+    color: #CD9586;
+    font-family: "anodyne", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0 0 6px black;
+    text-align: center;
+    margin: 0;
+    padding: 0;}
+
+h3{
+    font-size: 180%;
+    margin: 2%;
+    cursor: pointer;}
+
+h4{
+    font-size: 150%;
+    margin-bottom: 0.5em;
+    text-align: center;}
+
+h5{
+    color: linen;
+    font-style: italic;
+    text-shadow: 0 1px 2px black;
+    font-size: 150%;
+    text-align: center;}
+
+h7{
+    font-size: 180%;
+    margin: 1%;}
+
+h8{
+    font-size: 180%;
+    margin: 2%;}
+
+
+/* Style for article elements */
+article{
+    flex-basis: 60%;
+    justify-content: center;}
+
+article2{
+    display: flex;
+    justify-content: center;  
+    align-items: center; }
+
+article p{
+    margin: 0;
+    padding: 2%;}
+
+
+/* Style for aside elements */
+aside{
+    flex-basis: 40%;
+    justify-content: center;
+    background-color: #ECD2BC;}
+
+aside2{
+    display: flex;
+    justify-content: center;  
+    align-items: center;}
+
+aside3{
+    flex-basis: 40%;
+    justify-content: center;
+    background-color: #ECD2BC;
+    text-align: center;}
+
+aside2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+aside3{
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    margin:auto;
+    text-align: center;}
+
+aside3 ul{
+    list-style: none;
+    width: 500%;
+    display: flex;
+    position: absolute;
+    animation: slideshow 10s infinite;
+    padding: 0;
+    margin: 0;}
+
+aside3 ul li{
+    width: 20%;
+    flex-shrink: 0;}
+
+/* Style for section elements */
+section{ 
+    padding-left: 4%;
+    padding-right: 4%;}
+section2{
+    margin-bottom: 3%;}
+
+/* Style for paragraphs */
+p{
+    padding: 3%;}
+
+/* Style for images */
+.quarterback{
+    display: flex;
+    width: 100%;
+    border-top: 2px dotted #363857;
+    border-bottom: 2px dotted #363857;
+    border-right: 2px dotted #363857;}
+
+.running{
+    width: 100%;
+    border-top: 2px dotted #363857;
+    border-bottom: 2px dotted #363857;
+    border-right: 2px dotted #363857;}
+
+.jumping{
+    width: 100%;
+    margin-top: 2%;
+    border-top: 2px dotted #363857;
+    border-bottom: 2px dotted #363857;
+    border-right: 2px dotted #363857;}
+
+.core{
+    width: 100%;
+    margin-top: 2%;
+    border-top: 2px dotted #363857;
+    border-bottom: 2px dotted #363857;
+    border-right: 2px dotted #363857;}
+
+.swimming{
+    width: 100%;
+    margin-top: 2%;
+    border-top: 2px dotted #363857;
+    border-bottom: 2px dotted #363857;
+    border-right: 2px dotted #363857;}
+
+.app{
+    width: 80%;
+    border: 2px dotted #363857;}
+
+.alumni{
+    width: 80%;
+    display: inline-block;
+    margin-top: 9%;
+    border: 2px dotted #363857;}
+
+.alumni2{
+    width: 80%;
+    display: inline-block;
+    margin-top: 30%;
+    border: 2px dotted #363857;
+    margin-bottom: 9%;}
+
+.KU,.SIU{
+    width: 40%;}
+
+.OU{
+    width:25%;}
+
+.USC{
+  width:50%;}
+
+.WIS{
+    width:30%;}
+
+#image1 {
+    background-image: url("../images/peer3.png");
+    width: 100%;
+    height: 300px; /* Added height to ensure the container is visible */
+    background-size: cover;
+    transition: background-image 0.9s ease-in-out, border 0.5s ease-in-out;
+    border: 2px dotted #363857;}
+
+#image1:hover {
+    background-image: url("../images/peer4.png");
+    width: 100%;}
+
+/* Style for submission form elements */
+fieldset{
+    background-color: #CD9586;
+    border:2px dotted #363857;
+    padding-top: 1em;}
+
+label{
+    float: left;
+    width: 7em;
+    text-align: right;}
+
+input{
+    margin-left: 1em;
+    margin-bottom: .5em;}
+
+#button{
+    margin-left: 9.5em;
+    background-color: #79584F;
+    color: white;}
+
+#reset{
+    background-color: #79584F;
+    color: white;}
+
+textarea{
+    margin-left: 1em;
+    margin-bottom: .5em;}
+
+#comments{
+    width: 40%;
+    height: 60%;
+    padding-bottom: 10%;}
+
+/* Style for table elements */
+figcaption {
+    display: block;
+    font-weight: bold;
+    font-size: 150%;
+    padding-bottom: 1%;
+    text-align: center;
+    margin-top: 2%;}
+
+table{
+    background-color: #ECD2BC;
+    border-collapse: collapse;
+    margin-right: 2%;
+    margin-left: 2%;}
+    
+th, td{
+    border: 1px solid black;
+    padding: .2em .7em;}
+
+tbody tr:nth-child(even){
+    background-color: #CD9586;}
+    
+thead, tfoot {
+    text-align: center;
+    background-color: #79584F;
+    color: white;}
+
+
+/* Style for accordion elements */
+#accordion{
+    width: 80%;
+    padding: 1%;}
+
+#accordion a:focus + div,
+#accordion a:active + div,
+#accordion a:hover + div {
+    max-height: 120px; }    /* Expand the accordion content */
+
+#accordion div{
+    max-height: 0;
+    overflow: hidden;
+    transition: height 1s ease-in-out;}
+
+#accordion a{
+     background-color: #ECD2BC;
+    border-top: 2px dotted #363857;
+    text-decoration: none;
+    color: black;
+    padding: 1.5%;
+    box-shadow: 1px 3px 5px black;
+    display: block;}
+
+#accordion div:target{
+    max-height:120px;
+    padding: 2%;
+    margin-left: 2%;
+    background-color: #CD9586;}
+
+#accordion a:focus + div,
+#accordion a:active + div, 
+#accordion a:hover + div {
+    max-height: 120px;}  /* Show content when an accordion item is clicked */
+    
+@keyframes slideshow{
+    0%      {left:  0%;}
+    10%     {left:  0%;}
+    20%     {left:  -100%;}
+    30%     {left:  -100%;}
+    40%     {left:  -200%;}
+    50%     {left:  -200%;}
+    60%     {left:  -300%;}
+    70%     {left:  -300%;}
+    80%     {left:  -400%;}
+    90%     {left:  -400%;}
+    100%    {left:  -400%;}
+}
+
+ul{
+    margin-right: 4%;}
+
+/* Style for footer */
+footer p{
+    font-size: 110%;
+    margin: 0;
+    padding: 1%;}
+
+footer{
+    text-align: center;}
