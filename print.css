@@ -1,0 +1,46 @@
+/* Reset styles for print */
+* {
+    color: black !important;  /* Ensure readable text */
+    background: none !important;  /* Remove background colors */
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+body {
+    font-size: 12pt;
+    line-height: 1.6;
+    margin: .5in;  /* Add printable margins */
+    color: black;
+    border: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16pt;
+    margin: 0.5em 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, ul, li,{
+    font-size: 12pt;
+}
+/* Prevent awkward breaks */
+@page {
+    margin: 1in;
+}
+
+article, aside, section, table {
+    page-break-inside: avoid;
+}
+
+nav {
+	display: none; 
+}
+
+main {
+    display: block !important;  /* Override any flex styles */
+}
+    
+article, aside {
+    width: 100%;  /* Ensure full width */
+    margin-bottom: 1em;  /* Add space between them */
+}
