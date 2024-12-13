@@ -336,7 +336,7 @@ p{
     width:30%;}
 
 #image1 {
-    background-image: url("../Final-Project/peer3.png");
+    background-image: url("/Final-Project/peer3.png");
     width: 100%;
     height: 300px; /* Added height to ensure the container is visible */
     background-size: cover;
@@ -344,7 +344,7 @@ p{
     border: 2px dotted #363857;}
 
 #image1:hover {
-    background-image: url("../Final-Project/peer4.png");
+    background-image: url("/Final-Project/peer4.png");
     width: 100%;}
 
 /* Style for submission form elements */
