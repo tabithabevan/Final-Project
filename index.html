@@ -1,0 +1,93 @@
+  <!-- Comment area with name, university, date developed, date tested
+        Name: Tabitha Bevan 
+        University: Southern Illinois University, Carbondale 
+        Date Developed: December 8th, 2024 
+        Date Tested: December 13th, 2024 
+        -->
+
+<!DOCTYPE html>
+
+<!-- This document displays the home page for the 'What's the Game Plan' athletic resource website -->
+<html lang="en">
+    <head>
+        <meta char set="utf-8">
+        <title>What's the GamePlan?</title>
+        <link rel="stylesheet" href="styles/final.css">
+        <link rel="stylesheet" href="styles/print.css" media="print">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="stylesheet" href="https://use.typekit.net/vcs1aic.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <link rel="shortcut icon" href="images/favicon.png">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+         <!-- Meta description and keywords for SEO -->
+        <meta name="description" content = "The home page for the retiring collegiate athlete resource website"> 
+        <meta name="keywords" content = "athlete, collegiate, retiring, retired, support, help, resources, post-sport">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation Menu -->
+            <nav id="mobile_menu"></nav> 
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="index.html" class="current" >Home</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                    <li><a href="peer.html">Peers</a></li>
+                    <li><a href="exercise.html">Exercise</a></li>
+                    <li><a href="career.html" class="lastitem">Career</a></li> 
+                </ul> 
+            </nav>
+            <!-- Page title and descriptive caption -->
+            <h1>WHAT'S THE GAMEPLAN?</h1>
+            <h2>Resources for the retiring collegiate athlete</h2>
+        </header>
+        <main>
+            <article>
+                <!-- Image of football player -->
+                <img src="images/quarterback.webp" class="quarterback">
+            </article>
+            <aside>
+                <!-- Facts -->
+                <h3>What We Know:</h3>
+                <ul>
+                    <li>57.3% of former collegiate athletes attach negative sentiments to their transition out of sport</li><br>
+                    <li>Premature athletic retirement, strong athletic identity, and weak support systems increase psychological challenges in retired collegiate athletes</li><br> 
+                    <li>Nearly 40% of retired collegiate athletes surveyed report that their university did not offer specific athletic retirement resources</li><br> 
+                    <li>Retired collegiate athletes are indifferent about the effectiveness of their university athletic retirement resources</li>
+                </ul>
+                <h3>What We Do:</h3>
+                <ul>
+                    <li>Provide diverse athletic retiremenet resources to address unique and varied challenges of retired collegiate athletes</li><br>
+                    <li>Partner with universities to help facilitate positive transitions out of collegiate athletics</li><br>
+                    <li>Connect retired collegiate athletes with people and institutions who will help them acheive their goals outside of sport</li>
+                </ul>
+            </aside>
+        </main>
+        <section>
+            <!-- Submission Box-->
+            <h4><strong>Have questions? Comments? Concerns? Suggestions? Let us know below!</strong></h4>
+            <form name="myform" action="response.html" method="get">
+            <fieldset>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" autofocus required><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" autofocus required><br>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="comments">Comments:</label>
+                <textarea id="comments"
+                    placeholder="If you have any comments, please enter them here."></textarea><br>
+                <input type="submit" name="button" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset"> 
+            </fieldset>
+        </section>
+        <!-- Copyright -->
+        <footer>
+            <p>&copy; Copyright 2024 What's the GamePlan</p>
+        </footer>
+    </body>
